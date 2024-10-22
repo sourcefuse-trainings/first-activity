@@ -1,0 +1,59 @@
+<html>
+<head><title>Option tag</title></head>
+<body bgcolor="white"><h1>Add a New Book</h1>
+<style>
+input[type="text"  ]{
+width:200%;  
+}
+</style>
+<form>
+<table color=yellow cellspacing=32>
+<tr><td>
+Title: 
+<br>
+<input type="text" name=:"Tname">
+</td>
+</tr>
+<tr>
+<td>
+Author:<br>
+<input type="text" name="Aname">
+</td>
+</tr>
+<tr>
+<td>
+ISBN:<br>
+<input type="text" name="ISBN">
+</tr>
+</td>
+<tr>
+<td>
+Publication Date:<br>
+</td>
+<tr>
+<td>
+Genre:<br>
+<input type="text" name="Gname">
+<tr>
+</td>
+<tr>
+<td>
+Description:
+</td>
+<td>
+<textarea name="message"rows="5" cols="30" placeholdr="write query..">
+</textarea>
+</td>
+</tr>
+<tr align=center>
+<td>
+<input type="Submit" value="Submit" >
+</td>
+<td>
+<input type="Reset" value="Reset">
+</td>
+</tr>
+</form>
+</table>
+</body>
+
