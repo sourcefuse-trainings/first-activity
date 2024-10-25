@@ -1,59 +1,41 @@
-<html>
-<head><title>Option tag</title></head>
-<body bgcolor="white"><h1>Add a New Book</h1>
-<style>
-input[type="text"  ]{
-width:200%;  
-}
-</style>
-<form>
-<table color=yellow cellspacing=32>
-<tr><td>
-Title: 
-<br>
-<input type="text" name=:"Tname">
-</td>
-</tr>
-<tr>
-<td>
-Author:<br>
-<input type="text" name="Aname">
-</td>
-</tr>
-<tr>
-<td>
-ISBN:<br>
-<input type="text" name="ISBN">
-</tr>
-</td>
-<tr>
-<td>
-Publication Date:<br>
-</td>
-<tr>
-<td>
-Genre:<br>
-<input type="text" name="Gname">
-<tr>
-</td>
-<tr>
-<td>
-Description:
-</td>
-<td>
-<textarea name="message"rows="5" cols="30" placeholdr="write query..">
-</textarea>
-</td>
-</tr>
-<tr align=center>
-<td>
-<input type="Submit" value="Submit" >
-</td>
-<td>
-<input type="Reset" value="Reset">
-</td>
-</tr>
-</form>
-</table>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Management System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { max-width: 400px; }
+        label { display: block; margin: 10px 0 5px; }
+        input, select { width: 100%; padding: 8px; margin-bottom: 10px; }
+        button { padding: 10px; background-color: #28a745; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <h1>Add a New Booksss</h1>
+    <form id="bookForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
 
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" name="isbn" required>
+
+        <label for="pubDate">Publication Date:</label>
+        <input type="date" id="pubDate" name="pubDate" required>
+
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre" required>
+
+        <button type="submit">Add Book</button>
+    </form>
+    <script>
+        
+            // Add logic to handle form submission
+            alert('Book added!');
+        
+    </script>
+</body>
+</html>
