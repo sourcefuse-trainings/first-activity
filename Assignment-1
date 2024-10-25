@@ -32,10 +32,11 @@
         <button type="submit">Add Book</button>
     </form>
     <script>
-        
+        document.getElementById('bookForm').addEventListener('submit', function(event) {
+            event.preventDefault();
             // Add logic to handle form submission
             alert('Book added!');
-        
+        });
     </script>
 </body>
 </html>
