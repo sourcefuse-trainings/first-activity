@@ -1,12 +1,12 @@
 const bookForm = document.getElementById('bookForm');
-    const bookTableBody = document.querySelector('#bookTable tbody');
-    let books = [];
+const bookTableBody = document.querySelector('#bookTable tbody');
+let books = [];
 
     // Helper: Calculate the age of a book
-    const calculateBookAge = (year) => new Date().getFullYear() - year;
+const calculateBookAge = (year) => new Date().getFullYear() - year;
 
     // Helper: Validate form inputs
-    const isValidForm = ({ title, author, year, isbn, genre }) => {
+const isValidForm = ({ title, author, year, isbn, genre }) => {
       if (!title || !author || !year || !isbn || !genre) {
         alert('All fields must be filled!');
         return false;
