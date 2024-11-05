@@ -82,3 +82,4 @@ const bookForm = document.getElementById('bookForm');
         bookForm.reset();  // Clear the form
       }
     });
+    
